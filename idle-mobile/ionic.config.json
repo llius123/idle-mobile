@@ -1,0 +1,7 @@
+{
+  "name": "idle-mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

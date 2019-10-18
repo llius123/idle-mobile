@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	.izquierda, .derecha {
+		width: 50%;
+		border: 1px solid black;
+		display: flex;
+		flex-direction: column;
+	}
+	.derecha > .linea {
+		display: flex;
+		flex-direction: row;
+	}
+	&-test {
+		.linea {
+			display: flex;
+			flex-direction: row;
+			.izquierda {
+				width: 80%
+			}
+			.derecha {
+				width: 20%
+			}
+		}
+	}
+}
+table, tr, td {
+	border: 1px solid black;
+}

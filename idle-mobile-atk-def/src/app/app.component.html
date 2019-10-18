@@ -1,0 +1,243 @@
+<div class="container">
+	<div class="izquierda">
+		<form [formGroup]="aliado">
+			Aliado
+			<div class="titulo">
+				hp
+			</div>
+			<div class="input">
+				<input formControlName="hp" type="number" />
+			</div>
+			<div class="titulo">
+				atk
+			</div>
+			<div class="input">
+				<input formControlName="atk" type="number" />
+			</div>
+			<div class="titulo">
+				def
+			</div>
+			<div class="input">
+				<input formControlName="def" type="number" />
+			</div>
+		</form>
+		<form [formGroup]="aliado2">
+			Aliado2
+			<div class="titulo">
+				hp
+			</div>
+			<div class="input">
+				<input formControlName="hp" type="number" />
+			</div>
+			<div class="titulo">
+				atk
+			</div>
+			<div class="input">
+				<input formControlName="atk" type="number" />
+			</div>
+			<div class="titulo">
+				def
+			</div>
+			<div class="input">
+				<input formControlName="def" type="number" />
+			</div>
+		</form>
+		<form [formGroup]="aliado3">
+			Aliado3
+			<div class="titulo">
+				hp
+			</div>
+			<div class="input">
+				<input formControlName="hp" type="number" />
+			</div>
+			<div class="titulo">
+				atk
+			</div>
+			<div class="input">
+				<input formControlName="atk" type="number" />
+			</div>
+			<div class="titulo">
+				def
+			</div>
+			<div class="input">
+				<input formControlName="def" type="number" />
+			</div>
+		</form>
+	</div>
+	<div class="derecha">
+		<form [formGroup]="enemigo">
+			Enemigo
+			<div class="titulo">
+				hp
+			</div>
+			<div class="input">
+				<input formControlName="hp" type="number" />
+			</div>
+			<div class="titulo">
+				atk
+			</div>
+			<div class="input">
+				<input formControlName="atk" type="number" />
+			</div>
+			<div class="titulo">
+				def
+			</div>
+			<div class="input">
+				<input formControlName="def" type="number" />
+			</div>
+		</form>
+		<form [formGroup]="enemigo2">
+			Enemigo2
+			<div class="titulo">
+				hp
+			</div>
+			<div class="input">
+				<input formControlName="hp" type="number" />
+			</div>
+			<div class="titulo">
+				atk
+			</div>
+			<div class="input">
+				<input formControlName="atk" type="number" />
+			</div>
+			<div class="titulo">
+				def
+			</div>
+			<div class="input">
+				<input formControlName="def" type="number" />
+			</div>
+		</form>
+		<form [formGroup]="enemigo3">
+			Enemigo3
+
+			<div class="titulo">
+				hp
+			</div>
+			<div class="input">
+				<input formControlName="hp" type="number" />
+			</div>
+			<div class="titulo">
+				atk
+			</div>
+			<div class="input">
+				<input formControlName="atk" type="number" />
+			</div>
+			<div class="titulo">
+				def
+			</div>
+			<div class="input">
+				<input formControlName="def" type="number" />
+			</div>
+		</form>
+	</div>
+</div>
+<button (click)="crearPelea()">Pelear</button>
+
+
+<div class="container-test">
+	<div class="linea">
+		<div class="izquierda">
+			<table style="width:100%">
+					<tr>
+						<th>Aliado{{ '{' }} id,hp,atk,def{{ '}' }}</th>
+						<th>Enemigo{{ '{' }} id,hp,atk,def{{ '}' }}</th> 
+					</tr>
+					<tr>
+						<td>{{ '{' }} 1,100,10,5{{ '}' }}</td>
+						<td>{{ '{' }} 4,100,10,5{{ '}' }}</td>
+					</tr>
+					<tr>
+						<td>{{ '{' }} 2,100,10,5{{ '}' }}</td>
+						<td>{{ '{' }} 5,100,10,5{{ '}' }}</td>
+					</tr>
+					<tr>
+						<td>{{ '{' }} 3,100,10,5{{ '}' }}</td>
+						<td>{{ '{' }} 6,100,10,5{{ '}' }}</td>
+					</tr>
+				</table>
+		</div>
+		<div class="derecha">
+			<div class="linea">
+				<button (click)="test1()">Test</button>
+			</div>
+			<div class="linea">
+				Tiene que ser EMPATE
+			</div>
+			<div class="linea">
+				-- <b>{{test1Res}}</b> --
+			</div>
+		</div>
+	</div>
+	<div class="linea">
+		<div class="izquierda">
+			<table style="width:100%">
+					<tr>
+						<th>Aliado{{ '{' }} id,hp,atk,def{{ '}' }}</th>
+						<th>Enemigo{{ '{' }} id,hp,atk,def{{ '}' }}</th> 
+					</tr>
+					<tr>
+						<td>{{ '{' }} 1,100,20,5{{ '}' }}</td>
+						<td>{{ '{' }} 4,100,10,5{{ '}' }}</td>
+					</tr>
+					<tr>
+						<td>{{ '{' }} 2,100,20,5{{ '}' }}</td>
+						<td>{{ '{' }} 5,100,10,5{{ '}' }}</td>
+					</tr>
+					<tr>
+						<td>{{ '{' }} 3,100,20,5{{ '}' }}</td>
+						<td>{{ '{' }} 6,100,10,5{{ '}' }}</td>
+					</tr>
+				</table>
+		</div>
+		<div class="derecha">
+			<div class="linea">
+				<button (click)="test2()">Test</button>
+			</div>
+			<div class="linea">
+				Mismo hp, atk, def
+			</div>
+			<div class="linea">
+				Tiene que ganar los aliados
+			</div>
+			<div class="linea">
+				-- <b>{{test2Res}}</b> --
+			</div>
+		</div>
+	</div>
+	<div class="linea">
+		<div class="izquierda">
+			<table style="width:100%">
+					<tr>
+						<th>Aliado{{ '{' }} id,hp,atk,def{{ '}' }}</th>
+						<th>Enemigo{{ '{' }} id,hp,atk,def{{ '}' }}</th> 
+					</tr>
+					<tr>
+						<td>{{ '{' }} 1,100,10,5{{ '}' }}</td>
+						<td>{{ '{' }} 4,100,20,5{{ '}' }}</td>
+					</tr>
+					<tr>
+						<td>{{ '{' }} 2,100,10,5{{ '}' }}</td>
+						<td>{{ '{' }} 5,100,20,5{{ '}' }}</td>
+					</tr>
+					<tr>
+						<td>{{ '{' }} 3,100,10,5{{ '}' }}</td>
+						<td>{{ '{' }} 6,100,2s0,5{{ '}' }}</td>
+					</tr>
+				</table>
+		</div>
+		<div class="derecha">
+			<div class="linea">
+				<button (click)="test3()">Test</button>
+			</div>
+			<div class="linea">
+				
+			</div>
+			<div class="linea">
+				Tiene que ganar los aliados
+			</div>
+			<div class="linea">
+				-- <b>{{test3Res}}</b> --
+			</div>
+		</div>
+	</div>
+</div>
